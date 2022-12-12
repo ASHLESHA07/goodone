@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>more on selectors</title>
+</head>
+<style>
+    h1{
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        text-align: center;}
+        /* if p is  contained by any li which is contained by div */
+    /* div li p{
+        color: yellowgreen;
+        font-weight: bold;
+        background-color: brown;
+    } */
+    /* if p is right inside div */
+    /* div > p{
+        color: yellowgreen;
+        font-weight: bold;
+        background-color: brown;
+    }
+    /* if p is right after div  */
+    /* div +p{
+         color: black;
+         background-color: bisque;
+    } */ 
+
+</style>
+<body>
+<h1>This is more on selectors </h1>
+<div class="containers">
+    <div class="row">
+        <ul>
+        <li class="item"><P>This is a another paragraph</P></li>
+        </ul>
+        <P>This is paragraph </P>
+    </div>
+    <P>This is another paragraph</P>
+</div>
+<P>This is outermost paragraph</P>
+ 
+</body>
+</html>

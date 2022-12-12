@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>keyframs and animation</title>
+</head>
+<style>
+    .container {
+        /* display: flex; */
+        background-color: brown;
+    }
+
+    .box {
+        background-color: aqua;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        /* animation-name: Ashlesha1; */
+        animation-name: Ashlesha2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 3s; */
+        /* animation-direction: alternate-reverse; */
+        /* this property can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-funtion animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: ashlesha 5s ease-in 1s 12 backwards; */
+
+    }
+
+    @keyframes Ashlesha2 {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        23% {
+            top: 250px;
+            left: 25px;
+        }
+
+        45% {
+            top: 250px;
+            left: 250px;
+        }
+
+        100% {
+            top: 0px;
+            left: 250px;
+        }
+    }
+
+    /* @keyframes Ashlesha1 {
+        from {
+            width: 200px;
+        }
+
+        to {
+            width: 1200px;
+        }
+    } */
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+
+</body>
+
+</html>

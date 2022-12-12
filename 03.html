@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+
+<body>
+    <h2>This is HTML forms </h2>
+    <form action="backend.php">
+        <label for="NAME"> NAME</label>
+        <div>
+            <Input type="text" name="myname" Id="NAME">
+        </div>
+        <br>
+        <div>
+            ROLE: <Input type="text" name="myrole">
+        </div>
+        <br>
+        <div>
+            EMAIL: <Input type="email" name="myemail">
+        </div>
+        <br>
+
+        <div>
+            DATE: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            BOUNS: <input type="number" name="mybonus">
+        </div>
+        <br>
+        <div>
+            ARE YOU ELIGIBLE: <input type="checkbox" name="myELIGIBLILITY" checked>
+        </div>
+        <br>
+        <div>
+            GENDER MALE : <input type="radio" name="mygender">GENDER FEMALE: <input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            WRITE ABOUT YOURSELEF :<br> <textarea name="mytext" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <Input type="submit" name="submitnow">
+            <Input type="reset" name="resettnow">
+        </div>
+        <br>
+        <div>
+            <label for="CAR">CAR</label>
+            <select Name="my car" id="car">
+                <option value="Indica">Indica</option>
+                <option value="XL6">XL6</option>
+            </select>
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+</head><style>
+.contianer{
+    height: 1544px;
+    width:1800px;
+    border:2px solid black; 
+    /* Initialize the contianer as a flex box */
+    display: flex;
+/* flex properties for flex container */
+/* default value is row */
+flex-direction: row;
+/* flex-direction: row-reverse;
+flex-direction: column;
+flex-direction: column-reverse; */
+/* flex-wrap: wrap; */
+/* flex-wrap: wrap-reverse; */
+/* flex-flow: column-reverse;
+flex-flow: row-reverse; */
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+/* justify-content: space-evenly; */
+/* align-items: center;
+align-items: flex-end;
+align-items: flex-start; */
+align-items: stretch;
+
+
+}
+.item{
+    background-color: tomato;
+    border: 2px solid rgb(11, 33, 7);
+    margin: 10px;
+    padding: 3px;
+    width: 200px;
+    height: 300px;
+}
+.item1 {
+    /* flex properties for a flex item  */
+    /* higher the order ,laterr it shot up in the container*/
+    /* order 2  */
+    flex-grow: 2;
+}
+.item2 {
+    flex-basis: 4500px;
+}
+.item3 {
+    /* flex: 2 2 500px ; */
+    align-items: center;
+    align-items: flex-end;
+}
+</style>
+<body>
+<h1>  This is a Flex box </h1>
+<div class="contianer">
+<!-- div.item#item.$*6 -->
+<div class="item 1" id="item">First box</div>
+<div class="item 2" id="item">Second box</div>
+<div class="item 3" id="item">Third box</div>
+<!-- <div class="item 4" id="item">Fourth box </div>
+<div class="item 5" id="item">Fifth box</div>
+<div class="item 6" id="item">Sixth box</div> -->
+</div>
+</body>
+</html>

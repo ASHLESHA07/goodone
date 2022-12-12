@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Doucment</title>
+    </head>
+    <style>
+        /* CSS position: static (default), absolute, relative, fixed, sticky*/
+        .copy{
+            border: 2px solid black;
+            background-color: goldenrod;
+            height: 1300px;
+        }
+        .box{
+            display: inline-block;
+            border:2px solid brown;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box2{
+            /* relative:relative to its normal position */
+            /* position:relative; */
+            /* position:absolute; */
+            /* position: fixed; */
+           
+            /* right: 145px; */
+            /* top: 45px;
+            left:145px; */
+            position: sticky;
+            top:3px;
+        }
+    </style>
+    <body>
+     <div class="copy">
+        <!-- div.box#box*4 -->
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">cake cafe</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    </body>
+</div>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JAVASCRIPT</title>
+</head>
+
+<body>
+    <h1>ALERT BOX </h1>
+    <script type="text/javascript">
+        alert("Hii I AM ALERT BOX.");
+    </script>
+    <h2 style="border: 20px ;color:orange" ;>Dynamic Style</h2>
+    <P id="sample">hello Mummy</P>
+    <button onclick="changecontent();">change content</button>
+    <script type="text/javascript">
+        function changecontent() {
+            document.getElementById("sample").innerHTML = "LOREM IPSUM SIT AMIT.";
+        }
+    </script>
+    <h3>Dynamic image</h3>
+    <img src="C:\Users\Ayush\Desktop\.vscode\forest views.jpeg" style="max-width:100%; height :auto;" id= "sample"class="1" /> 
+    <br/>
+    <button onclick="changeimage();">changeimage</button>
+    <script type="text/javascript">
+        function changeimage() {
+            document.getElementById("sample").src ="C:\Users\Ayush\Desktop\.vscode\MAHDEVV.jpg";
+
+        }
+        </script>
+
+</body>
+
+</html>

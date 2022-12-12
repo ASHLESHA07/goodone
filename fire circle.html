@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(13, 1, 1);
+        }
+
+        .circle {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            filter:url(#wavy)blur(1px);
+        }
+
+        .circle::before {
+            content: "";
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            right: 100px;
+            bottom: 100px;
+            border: 20px solid rgb(231, 219, 219);
+            border-radius: 50%;
+            box-shadow: 0 0 50px rgb(3, 16, 98),
+                inset 0 0 50px rgb(19, 4, 102);
+            -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0002);
+            animation: animate 5s linear infinite;
+        }
+
+        .circle::after {
+            content: "";
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            right: 100px;
+            bottom: 100px;
+            border: 20px solid rgb(231, 219, 219);
+            border-radius: 50%;
+            box-shadow: 0 0 10px #fff,
+                inset 0 0 20px #fff;
+        }
+
+        .circle:nth-child(2):before {
+            animation-delay: -2.5s;
+
+        }
+
+        @keyframes animate {
+            0% {
+                box-shadow: 0 0 50px rgb(3, 16, 98),
+                    inset 0 0 50px rgb(19, 4, 102);
+                filter: hue-rotate(0deg);
+            }
+
+            20% {
+                box-shadow: 0 0 60px rgb(3, 16, 98),
+                    inset 0 0 60px rgb(19, 4, 102);
+
+            }
+
+            40% {
+                box-shadow: 0 0 60px rgb(3, 16, 98),
+                    inset 0 0 60px rgb(19, 4, 102);
+
+            }
+
+            60% {
+                box-shadow: 0 0 80px rgb(3, 16, 98),
+                    inset 0 0 80px rgb(19, 4, 102);
+
+            }
+
+            80% {
+                box-shadow: 0 0 100px rgb(3, 16, 98),
+                    inset 0 0 100px rgb(19, 4, 102);
+
+            }
+
+            100% {
+                box-shadow: 0 0 50px rgb(3, 16, 98),
+                    inset 0 0 50px rgb(19, 4, 102);
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .svg {
+            width: 0;
+            height: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <svg>
+        <filter id="wavy">
+            <feTurbulence x="0" y="0" baseFrequnce="0.009" numOctaves="5" seed="2">
+            </feTurbulence>
+            <animate attributeName="baseFrequnce" dur="60s" values="0.02;0.005;0.02" repeatCount="indefinite"></animate>
+            <feDisplacementMap in="SourceGraphic" scale="30">
+        </filter>
+    </svg>
+</body>
+
+</html>

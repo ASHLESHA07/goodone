@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn{
+        padding:10px 14px;
+       background-color: darkred;
+        color: antiquewhite;
+        border:2px solid black;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- Browers events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+    DOMcontentLoaded
+    transitionend -->
+    <div class="container">
+        <h1>This is my heading </h1>
+        <p id="god">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nemo hic accusamus voluptatem inventore
+            nihil fugiat assumenda totam esse, labore ducimus, dolorum maxime cupiditate fugit neque expedita eaque.
+            Ducimus facere dolorem beatae? Suscipit dolore ab expedita totam quibusdam ducimus recusandae obcaecati
+            voluptates magni cumque praesentium tempore, voluptatum exercitationem ex qui aspernatur incidunt. Officiis,
+            ut adipisci! Non libero natus nesciunt tenetur adipisci, ducimus quisquam est dolores officia nam molestias
+            quia obcaecati maxime, accusamus iure molestiae temporibus consequatur porro placeat voluptates. Totam ad
+            molestiae Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur exercitationem corrupti vero,
+            eligendi eveniet, nulla non sequi quasi delectus sint laudantium recusandae beatae aliquid nam magni atque
+            dolores quo numquam, sapiente nemo voluptate! Pariatur aut libero, ad doloremque sequi facere ab ducimus, ut
+            assumenda id ipsum tenetur numquam cumque repudiandae aspernatur explicabo optio porro repellendus, commodi
+            earum neque iure odio est! Nisi exercitationem quas id totam culpa expedita consectetur non, aspernatur
+            possimus commodi, voluptate, eaque laudantium fuga optio maiores ipsum dolores? Ea, expedita?</p>
+    </div>
+    <button id="btn" onclick="togglehide()">show/hide</button>
+    <script>
+        let god = document.getElementById('god');
+        god.addEventListener('mouseover',function run(){
+          alert('Mouse Inside')
+        });
+        god.addEventListener('mouseout',function run(){
+          alert('Mouse  now went  outside')
+        });
+        function togglehide(){
+          let btn = document.getElementById('btn');
+          let god = document.getElementById('god');
+          if (god.style.display != 'none'){
+          god.style.display = 'none';
+          god.style.display = 'none';
+        }
+        else{
+            god.style.display = 'block';
+        }
+          }
+    </script>
+</body>
+</html>

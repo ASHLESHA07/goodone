@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>dairy product</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        /* background:url("cadbury_milk_various_australia_crazy.jpg") no-repeat center center/cover; */
+        color: rgb(1, 15, 15);
+        margin: 0;
+        padding: 0;
+        /* height: 1100px; */
+    }
+
+    header::before {
+        content: "";
+        background: url("cadbury_milk_various_australia_crazy.jpg");
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+
+    .navbar {
+        font-family: cursive;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: bolder;
+        display: flex;
+        opacity: 10;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        margin: 0 8px;
+    }
+
+    .navbar ul li::after {
+        content: "";
+        height: 3px;
+        width: 0;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li:hover::after {
+        width: 100%;
+
+    }
+
+    .navbar li {
+        list-style: none;
+        padding: 24px 23px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: rgb(237, 227, 227);
+        text-transform: uppercase;
+    }
+
+    .navbar li a:hover {
+        color: rgb(245, 17, 17);
+    }
+
+    section {
+        height: 344px;
+        justify-content: center;
+        margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* border: 2px solid white; */
+    }
+
+    .content {
+        width: 1300px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+
+    .content h1 {
+        font-size: 70px;
+        margin-top: 80px;
+    }
+
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        font-size: 45px;
+        line-height: 25px;
+    }
+    button{
+        width: 200px;
+        padding: 15px;
+        text-align: center;
+        margin: 20px;
+        border-radius: 25px;
+        font-weight: bold;
+        border:2px solid #009688;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position:relative;
+        overflow: hidden;
+    }
+    span{
+        background: #009688;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    button:hover{
+        border: none;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    /* section ::after{
+    content: "This is a content"
+ } */
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <div>
+                <div class="content">
+                    <h1>CADBURY DARIY MILK</h1>
+                    <p> msaepe placeat? Ducimus Lorem
+                        quaerat distinctio dolore
+                    </p>
+                    <div>
+                        <button type="button"><span></span> MORE</button>
+                        <button type="button"><span></span>YUMMY</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</body>
+
+</html>

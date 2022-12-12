@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Display property </title>
+    <style>
+        body{
+             background-color: rgb(213, 133, 101);
+        }
+        *{
+
+            box-sizing: border-box;
+        }
+
+        .top{ 
+             background-color: blue;
+             border-radius: 20px;
+        }
+        .top li{
+             list-style: none;
+             float: right;
+             margin: 13px ;
+        }  
+        .top ul{
+            overflow: auto;
+
+        }
+        .top li a{
+             text-decoration: none ;
+             color:pink;
+             padding: 3px 3px;
+            }  
+        .top li a:hover{
+            color: rgb(36, 7, 7);
+        }
+        .search{
+            float: left;
+            padding : 10px 73px;
+            border-radius: 15px;
+        }
+        .top input{
+        border:2px solid black;
+        border-radius: 14px;
+        padding: 3px 17px;
+        width:149px;
+    }
+        
+        .box{
+            border: 4px solid black;
+            background-color: bisque;
+            margin: 4px 0px;
+            padding: 23px;
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+            border-radius: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif }
+
+        .image{
+            display: inline-block;
+            padding-left: 45px;
+            padding-top: 145px;
+          
+         
+        }
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+    </head>
+    <body>
+     <header class="top">
+        <nav>
+            <ul>
+                <li> <a href=""> Home</a></li>
+                <li><a  href="">About</a></li>
+                <li><a href=""> Service</a></li>
+                <li><a href="">Content us</a></li>
+                <div class="search" >
+                    <input type="search"name = "search" id="serach" placeholder=" search this website">
+                </div>
+            </ul>
+        </nav>
+     </header>
+     <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum optio incidunt dolore molestiae? Accusantium sequi vero optio repellendus eum, libero commodi vel ipsam iusto aliquam illum reprehenderit praesentium eos tempora nostrum reiciendis necessitatibus recusandae, quasi ullam. Aspernatur perspiciatis, explicabo quam tenetur id repellendus modi quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. A ex voluptate soluta excepturi! Id sapiente iure quaerat ipsam tempore doloribus officiis vel est quo rerum? Delectus, est ab ex libero aut fuga quia corrupti iusto officia labore, quos harum nisi! Consequatur accusantium non dolores  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quasi accusantium hic, magnam tenetur optio fugit facilis, repudiandae iure labore vero quos omnis maxime beatae tempora voluptate! At cum, vel sapiente rem voluptates et ea officia soluta molestiae, incidunt illum, autem laboriosam maiores recusandae nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet obcaecati minima reprehenderit sint accusamus, iusto consequuntur quaerat natus, sed nemo neque? Nam culpa eius ullam. Odit eius nobis eligendi nulla sed quas? Iste, exercitationem optio deleniti, debitis dolorem error, ipsum fugiat enim aliquid maxime sunt?</P>
+        </div>
+        <div class="image">
+        <img src= "C:\Users\Ayush\Desktop\.vscode\FLOWERS 01.jpg" width="500px" height="500px" >
+    </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum optio incidunt dolore molestiae? Accusantium sequi vero optio repellendus eum, libero commodi vel ipsam iusto aliquam illum reprehenderit praesentium eos tempora nostrum reiciendis necessitatibus recusandae, quasi ullam. Aspernatur perspiciatis, explicabo quam tenetur id repellendus modi quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eum. Hic aut excepturi dolores autem, consequuntur vel magnam deserunt enim nisi corrupti iusto, nulla nobis animi, nam quis. Fuga quam, fugiat deleniti voluptatem repellendus sunt hic nisi officia maxime illo repellat quisquam commodi dolorum dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum mollitia maxime soluta, pariatur, nulla ut odit earum ab iure similique dolores consequatur voluptate vel commodi dignissimos omnis magnam? Ipsam commodi laudantium id, earum modi eius velit voluptates aliquid omnis porro nostrum expedita repellendus dolore cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga earum placeat architecto repudiandae temporibus est qui facere nemo tenetur quos, mollitia quaerat itaque veritatis consequuntur iure, explicabo laboriosam accusamus odio a similique. Laborum, blanditiis at.
+            </P>
+        </div>
+        <div class="image">
+            <image src="C:\Users\Ayush\Desktop\.vscode\FLOWERS 01.jpg" width="500px" height="500px"></image>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum optio incidunt dolore molestiae? Accusantium sequi vero optio repellendus eum, libero commodi vel ipsam iusto aliquam illum reprehenderit praesentium eos tempora nostrum reiciendis necessitatibus recusandae, quasi ullam. Aspernatur perspiciatis, explicabo quam tenetur id repellendus modi quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque autem similique inventore temporibus sequi? Amet laborum adipisci vitae perferendis? Qui ut repudiandae consequuntur nostrum impedit in doloremque deleniti! Dolore recusandae repudiandae eos dolorum voluptate voluptatibus et ad distinctio adipisci?</P>
+        </div>
+        <div class="image">
+            <image src="C:\Users\Ayush\Desktop\.vscode\FLOWERS 01.jpg" width="500px" height="300px"></image>
+        </div>
+     </div>
+    </body>
+</html>

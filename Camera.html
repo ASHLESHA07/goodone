@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="" rel="stylesheet" href="D:\Juhi\.vscode\camera.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="images" id="Home">
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Home</a>
+                <a href="#Contact">Contact</a>
+            </div>
+
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
+        <script>
+            /* Open when someone clicks on the span element */
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            /* Close when someone clicks on the "x" symbol inside the overlay */
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+        <div class="logo">
+            <img class="animate__animated animate__rubberBand animate__delay-1s" src="juhiimages/camera.png">
+            <h1 class="animate__animated animate__zoomInDown animate__delay-1s">Ashlesha&nbsp;&nbsp;<b>Photos</b></h1>
+            <br>
+            <P class="animate__animated animate__zoomInDown animate__delay-1s">Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Ex numquam deleniti perferendis consectetur
+                accusantium tempore doloribus culpa beatae illo dolorem dignissimos, molestias quasi incidunt reiciendis
+                quam odio,<u> voluptates possimus fuga.</u></P>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Design</a>
+            <a href="#Photography">Photography</a>
+            <a href="D:\Juhi\.vscode\VLOGS.html">Vlogs</a>
+        </div>
+    </div><br>
+    <div class="coco" id="Photography">
+        <h1>ALBERT HALL MUESUM</h1>
+        <img class="animate__animated animate__fadeInLeft animate__delay-3s" src="juhiimages/coco1.jpg" width="300px"
+            height="400px">
+        <img class="animate__animated animate__fadeInLeft animate__delay-3s" src="juhiimages/coco2.jpg" width="300px"
+            height="400px">
+        <img class="animate__animated animate__fadeInLeft animate__delay-3s" src="juhiimages/coco3.jpg" width="300px"
+            height="400px">
+        <img class="animate__animated animate__fadeInLeft animate__delay-4s" src="juhiimages/coco4.jpg" width="300px"
+            height="400px">
+        <img class="animate__animated animate__fadeInLeft animate__delay-4s" src="juhiimages/coco5.jpg" width="300px"
+            height="400px">
+        <img class="animate__animated animate__fadeInLeft animate__delay-4s" src="juhiimages/coco6.jpg" width="300px"
+            height="400px">
+        <img class="animate__animated animate__fadeInLeft animate__delay-5s" src="juhiimages/coco7.jpg" width="300px"
+            height="400px">
+        <img class="animate__animated animate__fadeInLeft animate__delay-5s" src="juhiimages/coco8.jpg" width="300px"
+            height="400px">
+        <img class="animate__animated animate__fadeInLeft animate__delay-5s" src="juhiimages/coco9.jpg" width="300px"
+            height="400px">
+    </div>
+    <footer id="Contact">
+        <div class="five">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="last">
+            <a href="#Home">Home</a>
+            <a href="#">About</a>
+            <a href="#">Vlogs</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="yum">
+            <P>Ashlesha photos @2022</P>
+        </div>
+    
+    </footer>
+
+
+</body>
+
+</html>

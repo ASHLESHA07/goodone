@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>before and after pseudo selectors</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        background:url("gaming\ image.jpg") no-repeat center center/cover;
+        color:azure;
+        margin: 0;
+        padding: 0;
+        /* height: 1100px; */
+    }
+    header::before{
+        content: "";
+        background:url("gaming\ image.jpg") no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    .navigation{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        display: flex;
+    }
+    li{
+       list-style: none ;
+       padding: 24px 23px;
+    }
+ section{
+        height: 344px;
+        justify-content: center;
+        margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* border: 2px solid white; */
+    }
+    h1{
+    font-size: 4rem;
+ }
+ p{
+    text-align: center;
+ }
+ /* section ::after{
+    content: "This is a content"
+ } */
+ 
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Service</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi sit vero molestias odit sunt fugiat ipsum
+            aliquid quidem exercitationem perspiciatis. Laborum, possimus eius corporis sed non quasi. Expedita ipsa
+            alias labore reprehenderit optio quam a. Molestiae quae aperiam animi laboriosam, voluptatem ab
+            voluptate inventore recusandae?</p>
+
+    </section>
+</body>
+
+</html>

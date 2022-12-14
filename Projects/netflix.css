@@ -6,6 +6,14 @@
 body{
     background: black;
 }
+.ashu{
+    color: #db0001;
+    margin-top:30%;
+    text-align: center;
+    font-size: 25px;
+    font-family:sans-serif;
+    left: 40%;
+}
 .h{
     color: aliceblue;
     margin-top:5%;

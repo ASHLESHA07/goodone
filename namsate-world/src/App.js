@@ -3,12 +3,12 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Alert from './components/Alert';
 import Textform from './components/Textform';
-import About from './components/About';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+// import About from './components/About';
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
 
 
 
@@ -46,20 +46,21 @@ function App() {
   return (
     <>
       {/* <Navbar title="Goa" hometext="HOME"/> */}
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <About/> */}
-      <Router>
+      {/* <Router> */}
         <Navbar title="Goa" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3 mt-5">
-          <Router>
+          <Textform heading ='Goa'/>
+        </div>
+        {/* <Router>
             <Routes>
               <Route exact path="/" element={<Textform />} />
               <Route exact path="/about" element={<About />} />
             </Routes>
           </Router>
-        </div>
-      </Router>
+      </Router> */}
 
 
 

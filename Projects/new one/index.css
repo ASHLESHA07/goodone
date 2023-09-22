@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.independence {
+    background: linear-gradient(rgb(255, 153, 0), rgb(255, 255, 255), rgb(0, 161, 0));
+    height: 745px;
+    width: 100%;
+}
+
+.one h1{
+    font-size: 100px;
+    padding-top:18%;
+    font-family: 'Kaushan Script', cursive;
+    padding-left: 15%;
+    color: rgb(18, 18, 82);
+}
